@@ -1,54 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Box</title>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="./style.css">
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-
-    <div class="container">
-
-        <!-- NavBar/Header -->
-        <div class="navbar-section">
-            <img src="link box.png" alt="Link Saver logo" id="logo">
-            <span id="navbar-title">Link Box</span>
-        </div>
-
-        <!-- Link Buttons -->
-        <div class="task-section">
-            <button type="button" id="newLinkBtn" title="Save New Link"><i class="fa-solid fa-plus"></i><span id="btnText">Add link</span></button>
-            <button type="button" id="githubBtn" title="GitHub repository"><i class="fa-brands fa-github"></i></button>
-        </div>
-
-        <!-- Add New Link Inputs -->
-        <div class="addNewLink">
-            <form name="New Link">
-                <p class="inputError">Name input cannot be empty.</p>
-                <input class="nameInput" id="name" type="text" required placeholder="example"> <br> <br>
-
-                <p class="inputError">Input must be a valid URL.</p>
-                <input class="linkInput" id="link" type="url" required placeholder="https://example.com/username"> <br> <br>
-
-                <div class="confirmInput">
-                    <button type="button" class="addBtn">Confirm</button>
-                    <button type="button" class="cancelBtn">Cancel</button>
-                </div>
-            </form>
-        </div>
-
-        <!-- Links Display -->
-        <!-- Fetched using JavaScript -->
-        <div class="links-container"></div>
-
-    </div>
+  <head>
+    <title>Ganie's Links</title>
+    <!--An extension for link saving-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
-    <!-- JavaScript -->
-    <script src="./script.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
