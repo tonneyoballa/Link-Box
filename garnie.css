@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+h2{
+    font-size: 24px;
+    font-family: "Londrina Sketch", serif;
+}
+#garnie{
+    display: flex;
+    padding: 2rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.box{
+    margin: 1rem;
+    padding: 1rem;
+    float: right;
+    background: rgb(255,255,240);
+    background: linear-gradient(90deg, rgba(255,255,240,1) 0%, rgba(255,241,219,1) 35%, rgba(252,214,155,1) 100%);
+    border: 3px;
+    border-radius: 15px;
+    width: 232px;
+    height: 272px;
+}
+
+.form{
+    align-items: center;
+    justify-items: center;
+    height: 174px;
+    width: 200px;
+    background-color: rgba(178, 178, 112, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(169, 159, 102, 0.37);
+    border: 1px rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+.group {
+    position: relative;
+   }
+   
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+-webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+    background: #7f5539;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+#bottone5 {
+    align-items: center;
+    background-color: #ede0d4;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+   }
+
+   #bottone5:hover,
+   #bottone5:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+   }
+   
+   #bottone5:hover {
+    transform: translateY(-1px);
+   }
+   
+   #bottone5:active {
+    background-color: #fbe4d8;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+#form img{
+    margin: 20px;
+    padding: 25px;
+}
